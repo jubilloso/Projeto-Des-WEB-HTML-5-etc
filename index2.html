@@ -49,28 +49,59 @@
     color: #daff0a !important;
     text-decoration: underline !important;}
 
-</style>
+    .imagem-animada-rolagem {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    /* Ativa a animação baseada no scroll */
+    animation: aparecerEExpandir linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%; /* Faz a mágica acontecer logo quando ela surge na tela */
+}
+@keyframes aparecerEExpandir {
+    from {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.form{
+     color:white;
+    margin-right:auto;
+     margin-left:auto;
+      display: block;
+      justify-content: center;
+}
+
+
+</style>  <!----#2E2727;-->
    
 
-<body style="background-color: #2E2727;">
+<body style="background-color: #000000;">
     
     <img src="logo-acougue.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
         <div class="containerimginicial">
     <img src="imagem1.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
 
     <h2 style="text-align:center; color:white;font-size: 24px">Barra de navegação:</h2>
-         
-    <ul style="justify-content: center; color:white; display: flex; gap: 20px; list-style-type: none;">
-            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;" href="cliente.html">CLIENTES</a></li>
-              <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;" href="promocoe.html">PROMOÇÕES</a></li>
-               <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;" href="site-principla.html">PÁGINA PRINCIPAL</a></li>
-               <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;" href="site-principla.html">INFORMAÇÕES IMPORTANTES SOBRE AS CARNES</a></li>
+<hr style="background-color: #990000;height: 2px; border: none;">         
+    
+     <ul style="justify-content: center; color:white; display: flex; gap: 20px; list-style-type: none;">
+            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank" href="cliente.html">CLIENTES</a></li>
+              <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank"  href="promocoes.html">PROMOÇÕES</a></li>
+              
+               <li><a href="infosIMPortantes.html"style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank">INFORMAÇÕES IMPORTANTES</a></li>
         </ul>
     </div>
  <hr style="background-color: #990000;height: 2px; border: none;">
     <div class="containercorpo">
-        <h2 style="color:white;font-size: 24px;"> Objetivo do site além de vender:</h2> 
-        
+        <h2 style="color:white;font-size: 24px;"> Objetivo do site:</h2> 
+       
         
             <p1 style="color:brown; font-size:20px;">Salvar a humanidade da ditadura do alface.</p1>
               <br>
@@ -93,7 +124,7 @@
 
 
 
-
+ <img src="carnesemfundo.png" alt="imagem Carnes" class="imagem-animada-rolagem" style="width: 450px;display: block;margin-left:auto; margin-right:auto">
 
       <h1 class="centralizazdo" style="color:#990000"> tabela para colocar algo depois </h1>
            <table class="centralizado1" border="1">
@@ -110,23 +141,20 @@
         </div>
 <br>
 <div class="containerfinal">
-         <fieldset class="form-quem-sou-eu" style="color:white">
-             <form>
-                <legend style="font-size: 30px"> Isso é um formulário se eu for usar no site</legend>
-         <label for="nome">Nome:</label>
-          <input type="text" minlength="3" id="nome"required>
-             
-          <label for="email">E-mail:</label>
-            <input type="e-mail" id="email" required>
-                <legend>Fale conosco:</legend>
-            <textarea name="msg" cols="30" rows="4"></textarea>
-              <input type="submit" value="enviar">
-
-
-
-             </form>
-
-
+          <fieldset class="form">  
+        <legend>Deixe seu contato</legend>
+           <label for="Nome">Nome</label>
+              <input type="text" minlength="3" id="nome"required>
+               <label for="telefone">Telefone</label>
+             <input type="tel" id="telefone"  name="telefone" placeholder="(00) 00000-0000" maxlength="15" required >
+            <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu-email@exemplo.com" maxlength="100" required>
+    </fieldset>  
+    <fieldset class="form">  
+        <legend>Fale conosco:</legend>
+        <textarea></textarea>
+    
+    </fieldset>  
 
          </fieldset>
      

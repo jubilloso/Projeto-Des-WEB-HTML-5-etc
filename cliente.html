@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clientes</title>
 </head>
-<body>
-    <h1> aaaaaaaaaaaa</h1>
-</body>
+<style>
+.card-clientes{
+    background-color:white;
+     border-radius: 13px;
+}
+.form{
+    color:white;
+    margin-right:auto;
+     margin-left:auto;
+      display: block;
+      justify-content: center;
+
+}
+</style>
+
+<body style="background-color:black">
+           <img src="logo-acougue.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
+        <div class="containerimginicial">
+          <img src="carnesemfundo.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
+
+        <h2 style="text-align:center; color:white;font-size: 24px">Barra de navegação:</h2>
+   <hr style="background-color: #990000;height: 2px; border: none;">         
+        <ul style="justify-content: center; color:white; display: flex; gap: 20px; list-style-type: none;">
+            
+            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank"  href="promocoes.html">PROMOÇÕES</a></li>
+            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank"  href="index2.html">PÁGINA PRINCIPAL</a></li>
+            <li><a href="infosIMPortantes.html"style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank">INFORMAÇÕES IMPORTANTES</a></li>
+        </ul>
+    </div>
+ <hr style="background-color: #990000;height: 2px; border: none;">  
+                                <h1 style="color:white; text-align:center; font-size:30px;">O que dizem nossos carnívoros satisfeitos:</h1>
+            <div class="card-clientes" style=" border-radius: 15px; padding: 20px; margin-bottom: 20px;"> 
+                 <h1> 
+                    Marquinhos do Braseiro (Cliente desde 2024)
+                 </h1>
+            
+                <p>
+                    "Depois que comprei a picanha do Jubilous Steaks, meu cunhado finalmente parou de reclamar do ponto da carne no domingo. 
+                    Ele estava tão ocupado mastigando que nem conseguiu falar. Nota 10/10!" 
+                </p>
+               
+           </div>            
+            <br>
+               <div class="card-clientes" style=" border-radius: 15px; padding: 20px; margin-bottom: 20px;"> 
+                <h1>  Cláudio "Alface Nunca Mais"</h1>
+                 <p>
+                    "Eu passei três anos comendo apenas folhas e grãos.
+                       Um dia, senti o cheiro do cupim do Jubilous Steaks saindo da casa do vizinho.
+                        Entrei no site, fiz meu pedido e hoje minha saúde mental agradece."
+                 </p>
+              </div>       
+           
+            <br>
+               <div class="card-clientes" style=" border-radius: 15px; padding: 20px; margin-bottom: 20px;"> 
+                <h1>Zeca do Espetinho</h1>
+                  <p>
+                    "A carne é tão macia que economizei no dentista do meu avô.
+                     Ele conseguiu comer o cupim 'Travesseiro de Noiva' inteirinho mesmo sem a dentadura! Vale cada centavo do Pix."
+                  </p> 
+               </div>       
+             
+               <br>   
+               <div class="card-clientes" style=" border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+                 <h1>Doutor Ronaldo (Nutricionista Raiz)</h1>
+                 <p>
+                     "Meus pacientes vivem me pedindo dieta para emagrecer comendo alface. 
+                     Eu mando logo o link do Jubilous Steaks e prescrevo 300g de fraldinha com gordura na brasa três vezes por semana.
+                     O sorriso volta no rosto na hora!"
+
+                 </p>
+               </div>       
+                 <img src="foto-final.png " alt="foto-carne" style="margin-right:auto; margin-left:auto; display: block  ">   
+     <hr style="background-color: #990000;height: 2px; border: none;">   
+      
+   
+    <fieldset class="form">  
+        <legend>Deixe seu contato</legend>
+           <label for="Nome">Nome</label>
+              <input type="text" minlength="3" id="nome"required>
+               <label for="telefone">Telefone</label>
+             <input type="tel" id="telefone"  name="telefone" placeholder="(00) 00000-0000" maxlength="15" required >
+            <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu-email@exemplo.com" maxlength="100" required>
+    </fieldset>  
+    <fieldset class="form">  
+        <legend>Fale conosco:</legend>
+        <textarea></textarea>
+    
+    </fieldset>  
+  <br>
+  <br>
+</body >
 </html>
