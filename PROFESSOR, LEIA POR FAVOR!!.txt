@@ -1,0 +1,10 @@
+Olá, Professor!
+Gostaria de tirar uma dúvida sobre a entrega dessa primeira etapa do trabalho. Acabei me empolgando bastante com o projeto e decidi avançar um pouco na parte de estilização com CSS para dar identidade ao site.
+ Tem algum problema eu já ter adiantado essa parte visual agora?
+Como fiquei muito motivado com o tema, acabei dando uma boa adiantada na estrutura geral. Usei Inteligência Artificial como suporte para ter ideias criativas para o conteúdo das páginas. 
+Além disso, quando precisei de ajuda com conceitos que ainda não dominava perfeitamente — como animações na página inicial baseadas em rolagem —, usei a ferramenta para entender o funcionamento de regras como o @keyframes (aplicando opacity e scale).
+Espero que não tenha problema ter ido um pouco além do solicitado nesta fase. Fico à disposição para qualquer feedback!
+Atenciosamente,
+José Lucas
+
+
