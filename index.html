@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
-<style>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
 
-
-</style>
 </head>
 <style>
  .titulo-centralizado { 
@@ -15,12 +15,12 @@
  }
 .centralizazdo{
     text-align:center;
-    color:white;
+    
 }
 .centralizado1{
     text-align:center;
-    color:rgb(0, 0, 0);
-    background-color:#990000;
+    color:rgb(243, 243, 243);
+    background-color:#1a1a1c;
       margin-left: auto;
     margin-right: auto;
 }
@@ -29,6 +29,8 @@
 }
 .containercorpo{
     background-color:#000000;
+    
+    text-align:center;
 }
 .containerimginicial{
     background-color:#000000 ;
@@ -77,9 +79,21 @@
       display: block;
       justify-content: center;
 }
-
-
-</style>  <!----#2E2727;-->
+.menuFixo{
+    position: sticky; top: 0; z-index: 1000;
+}
+.regras{
+   
+    justify-content: left;
+}
+.regras ol li::marker {
+    color: #ff0000;
+}
+.regras ol {
+    list-style-type: circle;
+    
+}
+</style>  
    
 
 <body style="background-color: #000000;">
@@ -87,8 +101,8 @@
     <img src="logo-acougue.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
         <div class="containerimginicial">
     <img src="imagem1.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
-
-    <h2 style="text-align:center; color:white;font-size: 24px">Barra de navegação:</h2>
+  <div class="menuFixo">
+    <h2  style="text-align:center; color:white;font-size: 24px;font-family: 'Archivo Black', sans-serif;">Barra de navegação:</h2>
 <hr style="background-color: #990000;height: 2px; border: none;">         
     
      <ul style="justify-content: center; color:white; display: flex; gap: 20px; list-style-type: none;">
@@ -98,28 +112,48 @@
                <li><a href="infosIMPortantes.html"style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank">INFORMAÇÕES IMPORTANTES</a></li>
         </ul>
     </div>
+  </div>  
  <hr style="background-color: #990000;height: 2px; border: none;">
     <div class="containercorpo">
-        <h2 style="color:white;font-size: 24px;"> Objetivo do site:</h2> 
+        <h1 style="color:white;font-size: 40px;font-family: 'Archivo Black', sans-serif;"> Objetivo do site:</h1> 
        
         
-            <p1 style="color:brown; font-size:20px;">Salvar a humanidade da ditadura do alface.</p1>
+            <p style="color:rgb(255, 0, 0); font-size:22px;">Salvar a humanidade da ditadura do alface.</p>
+              <img src="alface.png " alt="alface do mal" style="width: 500px;display: block;margin-left: auto;margin-right: auto">
+    <hr style="background-color: #ffffff;height: 5px; border: none;">
               <br>
               <br>
-            <p1 style="color:white; font-size:20px;">Mostrar que sim, TEM o ponto certo para comer a carne, ou o boi morreu atôa</p1>
+            <p style="color:rgb(255, 2, 2); font-size:20px;">Mostrar que sim, TEM o ponto certo para comer a carne, ou o boi morreu atôa</p>
+                <img src="boimorreu.png " alt="Ponto certo da carne" style="width: 600px;display: block;margin-left: auto;margin-right: auto">
+      <hr style="background-color: #ffffff;height: 5px; border: none;">        
                <br>
                <br>
-            <p1 style="color:white; font-size:20px;">Aquele liquido que saí não é sangue</p1>
             
+            <--PArte das regras, uma lista dentro con container  com class= regras->
     </div>
 <hr style="background-color: #990000;height: 2px; border: none;">           
-   <div class="containercorpo"> 
-        <h3  style="color:white; font-size: 30px;"> Regras para ser nosso cliente:</h3> 
-              <a class="link-regra1" href="liquido.html" target="_blank" ><p style="color:#ff0000; text-decoration: underline;">NÃO CHAMAR O LIQUIDO QUE SAI DA CARNE DE SANGUE:</p></a>
-               <a class="link-regra2" href="gordura.html" target="_blank"><p style="color:#ff0000;text-decoration: underline ;">NÃO JOGAR A MARIVILHOSA GORDURA FORA:</p></a> 
-                  <a class="link-regra3" href="ponto.html" target="_blank"><p style="color:#ff0000;text-decoration: underline ;">NÃO FALAR QUE CARNE AO PONTO TÁ CRUA:</p></a> 
-                     <p style="color:#ff0000">NÃO SER FRESCO!</p>
-      </div>
+   <h1  style="text-align:center;color:white; font-size: 40px; font-family: 'Archivo Black', sans-serif;"> Regras para ser nosso cliente:</h1> 
+    <div class="regras"> 
+      <ol>       
+         <li> 
+            <p style="color:#ff0000; text-decoration: underline;">NÃO CHAMAR O LIQUIDO QUE SAI DA CARNE DE SANGUE:</p>
+           <p style="color:white;">Aquilo é mioglobina, uma proteína rica em ferro e água! Se fosse sangue, o boi estaria vivo no seu prato.</p> 
+        </li>
+          <li>
+                 
+               <p style="color:#ff0000;text-decoration: underline ;">NÃO JOGAR A MARIVILHOSA GORDURA FORA:</p></a> 
+                 <p style="color:white;">A gordura é o combustível do sabor. Tirar a gordura da carne é como comprar um carro conversível e andar sempre com o teto fechado.</p> 
+            </li> 
+                
+               <li>
+                    <p style="color:#ff0000;text-decoration: underline ;">NÃO FALAR QUE CARNE AO PONTO TÁ CRUA:</p>
+                     <p style="color:white;">O ponto correto preserva o suco e as fibras. Se você gosta de carne cinza e com textura de sola de sapato,
+                         recomendamos o setor de borracharia do posto mais próximo.</p> 
+            </li> 
+                    <li>
+                        <p style="color:#ff0000">NÃO SER FRESCO!</p></ol> 
+     </ol>
+         </div>
 <hr style="background-color: #990000;height: 2px; border: none;">
 
 
@@ -127,16 +161,27 @@
  <img src="carnesemfundo.png" alt="imagem Carnes" class="imagem-animada-rolagem" style="width: 450px;display: block;margin-left:auto; margin-right:auto">
 
       <h1 class="centralizazdo" style="color:#990000"> tabela para colocar algo depois </h1>
-           <table class="centralizado1" border="1">
+          
+      <!--TABELA COM PREÇOSSS-->
+        <table class="centralizado1" border="1" width="80%" cellpadding="12">
     <!-- Primeira Linha -->
-           <tr>
-             <td style="color:white">Coluna 1 - Linha 1</td>
-             <td tyle="color:white">Coluna 2 - Linha 1</td>
-           </tr>
-            <tr>
-             <td tyle="color:white">Coluna 2 - Linha 2</td>
-              <td tyle="color:white">Coluna 2 - Linha 2</td>
-             </tr>
+       
+          <tr>
+            <td ><strong>Combo Cunhado Manso</strong></td>
+             <td >Inclui 1kg de linguiça de frango e asas. Perfeito para aquele parente que não ajuda em nada e bebe sua cerveja cara 1 </td>
+             <td > R$ 49,90</td>
+        </tr>
+        
+        <tr>
+               <td ><strong>Picanha "O Mito"</strong></td>
+               <td>Capa de gordura milimetricamente calculada. Se pedir para tirar a gordura, o sistema cancela seu pedido.</td>
+               <td >R$ 189,90 /kg</td>
+        </tr>
+       <tr>
+            <td><strong>Tomahawk Ostentação</strong></td>
+           <td>Corte gigante com o osso para você postar nos stories e fingir riqueza enquanto o cartão chora.</td>
+             <td>R$ 260,00</td>
+       </tr>
           </table>
         </div>
 <br>
@@ -154,8 +199,7 @@
         <legend>Fale conosco:</legend>
         <textarea></textarea>
     
-    </fieldset>  
-
+    
          </fieldset>
      
 </div>
