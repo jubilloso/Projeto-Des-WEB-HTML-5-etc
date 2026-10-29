@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
+     <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <style>
 .card-clientes{
@@ -22,6 +25,9 @@
       justify-content: center;
 
 }
+botao-centro{
+  justify-content: center;
+}
 </style>
 
 <body style="background-color:black">
@@ -29,17 +35,17 @@
         <div class="containerimginicial">
           <img src="carnesemfundo.png" alt="imagem Carnes" style="width: 350px;display: block;margin-left: auto;margin-right: auto">
 
-        <h2 style="text-align:center; color:white;font-size: 24px">Barra de navegação:</h2>
+        <h2 style="text-align:center; color:white;font-size: 34px; font-family: 'Archivo Black', sans-serif;">Barra de navegação:</h2>
    <hr style="background-color: #990000;height: 2px; border: none;">         
         <ul style="justify-content: center; color:white; display: flex; gap: 20px; list-style-type: none;">
             
-            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank"  href="promocoes.html">PROMOÇÕES</a></li>
-            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank"  href="index.html">PÁGINA PRINCIPAL</a></li>
-            <li><a href="infosIMPortantes.html"style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 60%"  target="_blank">INFORMAÇÕES IMPORTANTES</a></li>
+            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 80%"  target="_blank"  href="promocoes.html">PROMOÇÕES</a></li>
+            <li><a style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 80%"  target="_blank"  href="index.html">PÁGINA PRINCIPAL</a></li>
+            <li><a href="infosIMPortantes.html"style="color:rgb(238, 238, 238);  text-decoration: none; font-weight: bold;font-size: 80%"  target="_blank">INFORMAÇÕES IMPORTANTES</a></li>
         </ul>
     </div>
  <hr style="background-color: #990000;height: 2px; border: none;">  
-                                <h1 style="color:white; text-align:center; font-size:30px;">O que dizem nossos carnívoros satisfeitos:</h1>
+                                <h1 style="text-align:center;color:white; font-size: 40px; font-family: 'Archivo Black', sans-serif;">O que dizem nossos carnívoros satisfeitos:</h1>
             <div class="card-clientes" style=" border-radius: 15px; padding: 20px; margin-bottom: 20px;"> 
                  <h1> 
                     Marquinhos do Braseiro (Cliente desde 2024)
@@ -80,27 +86,33 @@
 
                  </p>
                </div>       
-           <hr style="background-color: #990000;height: 2px; border: none;">     
-               <img src="carnefumaça.jpg " alt="foto-carne" style="border-radius: 45px; width: 100%; height: 250px; object-fit: cover; display: block;margin-left: auto; margin-right: auto" >   
-     
-           <hr style="background-color: #990000;height: 2px; border: none;">   
-      
+          
+     <h1  style="text-align:center;color:white; font-size: 40px; font-family: 'Archivo Black', sans-serif;"> Deixe o seu relato, nos ajude a melhorar</h1>   
    
     <fieldset class="form">  
         <legend>Deixe seu contato</legend>
            <label for="Nome">Nome</label>
               <input type="text" minlength="3" id="nome"required>
-               <label for="telefone">Telefone</label>
+                <br><br>
+              <label for="telefone">Telefone</label>
              <input type="tel" id="telefone"  name="telefone" placeholder="(00) 00000-0000" maxlength="15" required >
-            <label for="email">E-mail</label>
+                 <br><br>
+             <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="seu-email@exemplo.com" maxlength="100" required>
-    </fieldset>  
+      </fieldset>  
     <fieldset class="form">  
         <legend>Fale conosco:</legend>
-        <textarea></textarea>
-    
+        <textarea rows="7" cols="50" placeholder="Escreva aqui sua experiência gastronômica..."></textarea>
+            <br><br>
+          <button type="submit" style="display: block; margin: 20px auto; background-color: #990000; color: #f5f5f7; font-family: 'Montserrat', sans-serif; font-weight: 800; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        ENVIAR MEU RELATO SACRILÉGIO
+    </button>   
     </fieldset>  
-  <br>
-  <br>
+ <hr style="background-color: #990000;height: 2px; border: none;">     
+              
+      <img src="carnefumaça.jpg " alt="foto-carne" style="border-radius: 45px; width: 100%; height: 250px; object-fit: cover; display: block;margin-left: auto; margin-right: auto" >   
+     
+  <hr style="background-color: #990000;height: 2px; border: none;">   
+
 </body >
 </html>
